@@ -29,7 +29,7 @@
 
 				<q-item to="/" exact clickable v-ripple>
 			  		<q-item-section avatar>
-						<q-icon name="liste"/>
+						<q-icon name="list"/>
 			  		</q-item-section>
 			  		<q-item-section>To-do</q-item-section>
 				</q-item>
@@ -57,9 +57,11 @@
 	  </q-drawer>
 
 	<q-page-container>
-		<KeepAlive>
-			<router-view />
-		</KeepAlive>
+		<router-view v-slot="{ Component }">
+			<KeepAlive>
+				<component :is="Component" />
+			</KeepAlive>
+		</router-view>
 	</q-page-container>
   </q-layout>
 </template>

@@ -19,6 +19,7 @@
     "vue-router": "^4.0.0"
   },
   "devDependencies": {
+    "@electron/packager": "^18.3.2",
     "@quasar/app-vite": "^2.1.0",
     "autoprefixer": "^10.4.2",
     "electron": "^38.2.0",

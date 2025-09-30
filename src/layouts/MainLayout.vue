@@ -41,6 +41,12 @@
 			  		<q-item-section>Aide</q-item-section>
 				</q-item>
 
+				<q-item to="/techno1" exact clickable v-ripple>
+			  		<q-item-section avatar>
+						<q-icon name="looks_one"/>
+			  		</q-item-section>
+			  		<q-item-section>Accès Techno 1</q-item-section>
+				</q-item>
 
 		  </q-list>
 		</q-scroll-area>

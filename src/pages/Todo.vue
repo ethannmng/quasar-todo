@@ -20,7 +20,7 @@
 			<q-item 
 				v-for="(task, index) in taskStore.tasks" 
 				:key="task.title" 
-				@click="taskStore.toggleTaskDone(index)"
+				@click="taskStore.toggleDone(index)"
 				:class="{ 'done bg-blue-1': task.done }" 
 				clickable 
 				v-ripple
